@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./imagenes/Logo.png" alt="" />
+      <h1>Encriptador de texto</h1>
+    </header>
+    <main class="contenido">
+      <section class="contenido__encriptador">
+        <textarea
+          required
+          name=""
+          id="texto"
+          placeholder="Ingrese texto aqui"
+          class="contenido__encriptador__texto"
+        ></textarea>
+        <p class="contenido__encriptador__mensaje">
+          <img src="./imagenes/Group.png" alt="" /> Solo letras minusculas y sin
+          acentos
+        </p>
+        <div class="contenido__encriptado__botones">
+          <button
+            onclick="encriptar()"
+            class="encriptador__boton encriptador__boton__btn1"
+          >
+            Encriptar
+          </button>
+          <button
+            onclick="desencriptarTexto()"
+            class="encriptador__boton encriptador__boton__btn2"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <div class="resultado">
+        <div class="contenido__resultado__cont" id="contenido">
+          <img
+            class="contenido__resultado__cont__imagen"
+            src=".//imagenes/Muñeco.png"
+            alt=""
+          />
+          <h3 class="contenido__resultado__cont__h3">
+            Ningún mensaje fue encontrado
+          </h3>
+          <p class="contenido__resultado__cont__parrafo">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+
+        <div
+          style="display: none"
+          class="resultado__result"
+          id="resultado__resultados"
+        >
+          <div class="contenido">
+            <p id="resultado" class="texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              deserunt fuga nesciunt tempora nostrum debitis veniam eligendi
+              dolore minus quidem, voluptate hic, placeat sint maiores. In porro
+              officia voluptatum? Optio.
+            </p>
+          </div>
+
+          <button class="resultado__result__copiar" onclick="copiarTexto()">
+            copiar
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; Jose Luis Parra Hoyos</p>
+      <p>2024</p>
+    </footer>
+
+    <script src="./javaScript/encriptar.js"></script>
+  </body>
+</html>
