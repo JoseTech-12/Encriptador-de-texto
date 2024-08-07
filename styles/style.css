@@ -161,6 +161,7 @@ footer {
   }
   .contenido__encriptador__texto {
     height: 67vh;
+    width: 80%;
   }
 }
 
@@ -173,6 +174,10 @@ footer {
 
   .contenido__encriptador__texto {
     height: 52vh;
-    width: auto;
+    width: 90%;
+  }
+
+  .encriptador__boton {
+    width: 80%;
   }
 }
